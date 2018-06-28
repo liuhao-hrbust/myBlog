@@ -1,4 +1,0 @@
-# linsinan
-> lin
-
-tag:ccc

@@ -1,10 +1,7 @@
 'use strict';
 
-function cl(className, index) {
-    return document.getElementsByClassName(className)[index];
-}
 
-let blackboard = cl('blackb', 0);
+let blackboard = document.getElementsByClassName('blackb')[0];
 window.onload = async function () {
     blackboard.className = 'onimg ' + 'blackb';
     try {
@@ -43,15 +40,29 @@ window.onload = async function () {
                     button.innerHTML = 'Learn More';
                     button.className = 'btn btn-default learn';
                     div.appendChild(button);
+                    div.setAttribute("filename", `${wen[i].filename}`);
                 }
             }
         });
-    } catch(error) {
-        return ;
+    } catch (error) {
+        return;
     }
-    $(".learn").click(function () {
-        alert('asd');
-        $(".list").hide();
+    $('.temptext').hide();
 
+    $(".learn").click(function () {
+        $(".list").hide();
+        var filename = this.parentNode.getAttribute('filename');
+        // $('.temptext').load(`../files/${filename}`,()=>{});
+        $.ajax({
+            url: `getContent/${filename}`,
+            type: 'get',
+            dataType: 'json',
+            success: function (data) {
+                var converter = new Markdown.Converter();
+                var htm = converter.makeHtml(data);
+                $('.temptext').html(htm);
+            }
+        });
+        $('.temptext').show();
     });
 };
