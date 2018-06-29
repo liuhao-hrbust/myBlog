@@ -23,6 +23,7 @@ app.get('/getList', function (req, res) {
     var filenames = fs.readdirSync(root);
     // console.log(filenames);
     var wen = new Array();
+
     for (var i = 0; i < num; i++) {
         var target = path.join(root,filenames[i]);
         var issiues = new Object();
