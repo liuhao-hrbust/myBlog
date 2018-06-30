@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6f710a9-0aae-4763-a24c-36b7b22067d6" name="默认" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/public/first/script/a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/public/first/script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/public/first/script/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/public/first/script/jquery-1.8.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/public/home/script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/public/home/script/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/public/home/script/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/public/home/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/public/home/style/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/src/contact/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/contact/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/src/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/home/home.html" afterDir="false" />
-    </list>
+    <list default="true" id="f6f710a9-0aae-4763-a24c-36b7b22067d6" name="默认" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -29,26 +17,26 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapp/src/home/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
+            <state relative-caret-position="1612">
               <caret line="62" selection-start-line="62" selection-end-line="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-290">
-              <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+            <state relative-caret-position="130">
+              <caret line="20" column="98" selection-start-line="20" selection-start-column="98" selection-end-line="20" selection-end-column="98" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapp/public/home/script/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+            <state relative-caret-position="193">
+              <caret line="58" column="53" lean-forward="true" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -56,7 +44,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapp/public/first/script/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="988">
               <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
             </state>
           </provider>
@@ -65,7 +53,7 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapp/public/home/style/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
+            <state relative-caret-position="2340">
               <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
             </state>
           </provider>
@@ -83,7 +71,7 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapp/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
+            <state relative-caret-position="1066">
               <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
             </state>
           </provider>
@@ -159,10 +147,10 @@
         <option value="$PROJECT_DIR$/myapp/src/home/index.html" />
         <option value="$PROJECT_DIR$/myapp/public/home/style/index.css" />
         <option value="$PROJECT_DIR$/myapp/server.js" />
-        <option value="$PROJECT_DIR$/myapp/index.html" />
         <option value="$PROJECT_DIR$/myapp/src/home/home.html" />
         <option value="$PROJECT_DIR$/myapp/public/first/script/index.js" />
         <option value="$PROJECT_DIR$/myapp/public/home/script/home.js" />
+        <option value="$PROJECT_DIR$/myapp/index.html" />
       </list>
     </option>
   </component>
@@ -181,7 +169,7 @@
       <path value="$PROJECT_DIR$/myapp/public/showdown/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
     <option name="width" value="975" />
     <option name="height" value="751" />
@@ -194,6 +182,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,7 +271,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
@@ -407,17 +395,17 @@
       <workItem from="1530274967030" duration="5797000" />
       <workItem from="1530321884509" duration="2243000" />
       <workItem from="1530349568478" duration="1896000" />
+      <workItem from="1530363250069" duration="400000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102741000" />
+    <option name="totallyTimeSpent" value="103141000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1004" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1920" height="1004" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26487625" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26487625" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="调试" order="12" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -425,7 +413,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32951945" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.27688786" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.27688786" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -449,31 +437,31 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="调试" order="12" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26487625" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32951945" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.27771428" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Capture Tool" order="4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32998884" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32951945" />
-      <window_info anchor="bottom" id="调试" order="12" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info id="Favorites" order="6" side_tool="true" />
@@ -656,7 +644,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myapp/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
+        <state relative-caret-position="1066">
           <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
         </state>
       </provider>
@@ -670,41 +658,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myapp/public/home/style/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
+        <state relative-caret-position="2340">
           <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myapp/src/home/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
+        <state relative-caret-position="1612">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-290">
-          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/public/first/script/a.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2496" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/public/first/script/a.js" />
     <entry file="file://$PROJECT_DIR$/myapp/public/first/script/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="988">
           <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myapp/public/home/script/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+        <state relative-caret-position="193">
+          <caret line="58" column="53" lean-forward="true" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="20" column="98" selection-start-line="20" selection-start-column="98" selection-end-line="20" selection-end-column="98" />
         </state>
       </provider>
     </entry>
