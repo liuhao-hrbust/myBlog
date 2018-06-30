@@ -33,7 +33,7 @@ round_r.onmouseleave = function () {
     discrib_l.className = 'discrib_l discrib';
 };
 round_l.onclick = function () {
-    window.open("../home/index.html",'_self');
+    window.open("home/home.html",'_self');
 };
 round_r.onclick = function () {
     window.open('https://github.com/liuhao-hrbust/','_self');

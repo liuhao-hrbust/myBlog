@@ -1,7 +1,7 @@
 var express = require('express');
-var path = require('path');
-var app = express();
-var fs = require('fs');
+const path = require('path');
+const app = express();
+const fs = require('fs');
 
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, 'index.html'));
@@ -28,9 +28,7 @@ app.get('/getList', function (req, res) {
         var target = path.join(root,filenames[i]);
         var issiues = new Object();
         issiues.article = filenames[i];
-        // console.log(target);
         var content = fs.readFileSync(target,'utf-8');
-        // console.log(content);
         var patternTitle = /^#\s([\u4E00-\u9FA5A-Za-z0-9_]+)/;
         var patternDescription = /^>\s([\u4E00-\u9FA5A-Za-z0-9_]+)/m;
         var patternTags = /tag:(.*)?/;
@@ -41,10 +39,5 @@ app.get('/getList', function (req, res) {
         wen.push(issiues);
     }
     wen = JSON.stringify(wen);
-    // console.log(wen);
     res.send(wen + '') ;
 });
-app.get('/getContent',function (req,res) {
-
-});
-

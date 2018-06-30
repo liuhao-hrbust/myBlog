@@ -91,4 +91,10 @@ nav .project {
 .btnpad{
     margin-right:2px;
     background-color: rgb(200,200,200);
+}c
+.temptext p{
+    font-size: 20px;
+}
+.temptext li {
+    font-size: 18px;
 }

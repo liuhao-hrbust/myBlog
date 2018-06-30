@@ -10,7 +10,7 @@ window.onload = async function () {
             method: "get",
             success: function (wen) {
                 wen = JSON.parse(wen);
-                console.log(wen);
+                // console.log(wen);
                 var div;
                 var article;
                 var p;
@@ -30,11 +30,7 @@ window.onload = async function () {
                     div.className = 'col-md-6 list';
                     var tags = new Array();
                     tags = wen[i].tags.split(' ');
-                    console.log(tags);
                     for (var j = 0; j < tags.length; j++) {
-                        // span = document.createElement('span');
-                        // span.className = 'label label-default';
-                        // span.innerHTML = tags[j];
                         btn = document.createElement('button');
                         btn.className = 'btn btn-group-sm btnpad';
                         btn.innerHTML = tags[j];
@@ -55,23 +51,16 @@ window.onload = async function () {
 
     $(".learn").click(function () {
         $(".list").hide();
+        var button = "<button class=\"btn btn-default \">Back</button>";
+        $('.temptext').append(button);
+
         var filename = this.parentNode.getAttribute('filename');
-        // $('.temptext').load(`../files/${filename}`);
-        // var md = $('.temptext').
-        // $.ajax({
-        //     url: `getContent/${filename}`,
-        //     type: 'get',
-        //     dataType: 'json',
-        //     success: function (data) {
-        //         var converter = new Markdown.Converter();
-        //         var htm = converter.makeHtml(data);
-        //         $('.temptext').html(htm);
-        //     }
-        // });
         $.get(`../files/${filename}`,(data)=>{
             var converter = new showdown.Converter();
                     var htm = converter.makeHtml(data);
-                    $('.temptext').html(htm);
+                    $('.temptext').html(function () {
+                        return $('.temptext').html() + htm;
+                    });
         });
         $('.temptext').show();
     });
