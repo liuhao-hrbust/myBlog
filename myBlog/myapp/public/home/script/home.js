@@ -49,8 +49,9 @@ window.onload = async function () {
     }
     $('.temptext').hide();
 
-    $(".learn").click(function () {
+    $(".learn").click(function (event) {
         $(".list").hide();
+        $(".temptext").html("");
         var button = "<button class=\"btn btn-default \">Back</button>";
         $('.temptext').append(button);
 
@@ -63,5 +64,18 @@ window.onload = async function () {
                     });
         });
         $('.temptext').show();
+        var pathname = location.pathname;
+        //location.pathname = "/home/" + filename.split(".")[0];
+        history.pushState({id:Math.random()},"","/"+filename.split(".")[0])
+        window.onpopstate = () =>{
+            console.log(location.pathname)
+            if(location.pathname.indexOf(".html") !== -1){
+                $('.temptext').hide();
+                $('.list').show();
+            } else {
+                $('.temptext').show();
+                $('.list').hide();
+            }
+        }
     });
 };
