@@ -15,6 +15,7 @@ window.onload = async function () {
                 var article;
                 var p;
                 var span;
+                var btn;
                 var button;
 
                 for (let i = 0; i < parseInt(wen.length); i++) {
@@ -31,10 +32,13 @@ window.onload = async function () {
                     tags = wen[i].tags.split(' ');
                     console.log(tags);
                     for (var j = 0; j < tags.length; j++) {
-                        span = document.createElement('span');
-                        span.className = 'label label-default';
-                        span.innerHTML = tags[j];
-                        div.appendChild(span);
+                        // span = document.createElement('span');
+                        // span.className = 'label label-default';
+                        // span.innerHTML = tags[j];
+                        btn = document.createElement('button');
+                        btn.className = 'btn btn-group-sm btnpad';
+                        btn.innerHTML = tags[j];
+                        div.appendChild(btn);
                     }
                     button = document.createElement('button');
                     button.innerHTML = 'Learn More';
@@ -52,16 +56,22 @@ window.onload = async function () {
     $(".learn").click(function () {
         $(".list").hide();
         var filename = this.parentNode.getAttribute('filename');
-        // $('.temptext').load(`../files/${filename}`,()=>{});
-        $.ajax({
-            url: `getContent/${filename}`,
-            type: 'get',
-            dataType: 'json',
-            success: function (data) {
-                var converter = new Markdown.Converter();
-                var htm = converter.makeHtml(data);
-                $('.temptext').html(htm);
-            }
+        // $('.temptext').load(`../files/${filename}`);
+        // var md = $('.temptext').
+        // $.ajax({
+        //     url: `getContent/${filename}`,
+        //     type: 'get',
+        //     dataType: 'json',
+        //     success: function (data) {
+        //         var converter = new Markdown.Converter();
+        //         var htm = converter.makeHtml(data);
+        //         $('.temptext').html(htm);
+        //     }
+        // });
+        $.get(`../files/${filename}`,(data)=>{
+            var converter = new showdown.Converter();
+                    var htm = converter.makeHtml(data);
+                    $('.temptext').html(htm);
         });
         $('.temptext').show();
     });
