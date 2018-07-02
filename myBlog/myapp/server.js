@@ -13,8 +13,14 @@ app.get('/contact/index.html', function (req, res) {
     res.sendFile(path.join(__dirname, 'src/contact/index.html'));
 });
 app.use(express.static('public'));
-var server = app.listen(3000, function () {
+app.listen(3000, function () {
 
+});
+app.get('/files/:filename', function(req, res){
+    var target = path.join(__dirname, `public/${req.params.filename}`);
+    console.log(target);
+    var content = fs.readFileSync(target,'utf-8');
+    res.send(''+content);
 });
 app.get('/getList', function (req, res) {
 
@@ -41,3 +47,4 @@ app.get('/getList', function (req, res) {
     wen = JSON.stringify(wen);
     res.send(wen + '') ;
 });
+console.log('server is running');

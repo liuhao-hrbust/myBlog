@@ -3,6 +3,7 @@
 
 let blackboard = document.getElementsByClassName('blackb')[0];
 window.onload = async function () {
+    // console.log('aaa');
     blackboard.className = 'onimg ' + 'blackb';
     try {
         await $.ajax({
@@ -20,14 +21,15 @@ window.onload = async function () {
 
                 for (let i = 0; i < parseInt(wen.length); i++) {
                     div = document.createElement("div");
-                    article = document.createElement("article");
+                    article = document.createElement("h1");
                     p = document.createElement('p');
                     article.innerHTML = wen[i].title;
                     p.innerHTML = wen[i].description;
                     div.appendChild(article);
                     div.appendChild(p);
+                    // $('.sss').append(div);
                     document.body.appendChild(div);
-                    div.className = 'col-md-6 list';
+                    div.className = 'col-sm-6 list ';
                     var tags = new Array();
                     tags = wen[i].tags.split(' ');
                     for (var j = 0; j < tags.length; j++) {
@@ -52,21 +54,28 @@ window.onload = async function () {
     $(".learn").click(function (event) {
         $(".list").hide();
         $(".temptext").html("");
-        var button = "<button class=\"btn btn-default \">Back</button>";
+        var button = "<button class=\"btn btn-default back \">Back</button>";
         $('.temptext').append(button);
 
         var filename = this.parentNode.getAttribute('filename');
-        $.get(`../files/${filename}`,(data)=>{
-            var converter = new showdown.Converter();
-                    var htm = converter.makeHtml(data);
-                    $('.temptext').html(function () {
-                        return $('.temptext').html() + htm;
-                    });
-        });
+        $.ajax({
+            url:`/files/${filename}`,
+            method:"get",
+            success: (data) => {
+                // console.log('aaa');
+                var converter = new showdown.Converter();
+                var htm = converter.makeHtml(data);
+                // console.log(url);
+                
+                $('.temptext').html(function () {
+                    return $('.temptext').html() + htm;
+                });
+            }
+        })
         $('.temptext').show();
-        var pathname = location.pathname;
-        //location.pathname = "/home/" + filename.split(".")[0];
-        history.pushState({id:Math.random()},"","/"+filename.split(".")[0])
+        // var pathname = location.pathname;
+        // //location.pathname = "/home/" + filename.split(".")[0];
+        history.pushState({id:Math.random()},"","/files/"+filename)
         window.onpopstate = () =>{
             console.log(location.pathname)
             if(location.pathname.indexOf(".html") !== -1){
@@ -76,6 +85,14 @@ window.onload = async function () {
                 $('.temptext').show();
                 $('.list').hide();
             }
-        }
+        };
+        console.log($('.back'));
+        console.log(document.getElementsByClassName('back').length);
+        document.getElementsByClassName('back')[0].onclick = function () {
+            console.log('abc');
+            $('.temptext').hide();
+            $('.list').show();
+        };
     });
-};
+
+}
