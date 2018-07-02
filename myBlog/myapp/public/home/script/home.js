@@ -87,12 +87,12 @@ window.onload = async function () {
             }
         };
         console.log($('.back'));
-        console.log(document.getElementsByClassName('back').length);
-        document.getElementsByClassName('back')[0].onclick = function () {
-            console.log('abc');
-            $('.temptext').hide();
-            $('.list').show();
-        };
-    });
+        console.log(document.getElementsByClassName('back')[0]);
 
+    });
+    document.getElementsByClassName('back')[0].onclick = function () {
+        console.log('abc');
+        $('.temptext').hide();
+        $('.list').show();
+    };
 }
