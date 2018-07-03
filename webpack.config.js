@@ -3,11 +3,13 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const history = require("connect-history-api-fallback");
 const dev = Boolean(process.env.WEBPACK_SERVE);
 const convert = require("koa-connect");
+require("babel-core/register");
+require("babel-polyfill");
 
 module.exports = {
   mode: dev ? "development" : "production",
   // devtool: dev ? "cheap-module-eval-source-map" : "hidden-source-map",
-  entry: "./src/index.js",
+  entry: ["babel-polyfill", "./src/index.js"],
   output: {
     path: resolve(__dirname, "public"),
     filename: "index.js"
@@ -45,20 +47,20 @@ module.exports = {
       template: "./src/index.html",
       chunksSortMode: "none"
     })
-  ]
-};
-module.exports.serve = {
-  port: 8080,
-  add: app => {
-    app.use(convert(history()));
+  ],
+  devServer: {
+    proxy: {
+      "/api": {
+        target: "http://localhost:3000",
+        secure: false,
+        pathRewrite: {
+          "^/api": "/getList"
+        }
+        // bypass: (req, res, proxyOptions) => {
+        //   console.log(req.query);
+        //   console.log(res.query);
+        // }
+      }
+    }
   }
 };
-// if (dev) {
-//   module.exports.serve = {
-//     port: 8080,
-//     add: app => {
-//       app.use(convert(history()));
-//     }
-//   };
-// }
-// modules.export = config;

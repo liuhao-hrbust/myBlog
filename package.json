@@ -29,7 +29,10 @@
     "babel-generator": "^6.26.1",
     "babel-helpers": "^6.24.1",
     "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
     "css-loader": "^0.28.11",
     "detect-indent": "^5.0.0",
     "eslint": "^5.0.1",
@@ -50,7 +53,8 @@
   },
   "babel": {
     "presets": [
-      "env"
+      "env",
+      "stage-0"
     ]
   }
 }
