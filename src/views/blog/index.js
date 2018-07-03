@@ -1,6 +1,8 @@
 import router from "../../router";
 import template from "./index.html";
 import "./style.css";
+// import "../../shared/bootstrap.min.css";
+// import "../../shared/bootstrap.min.js";
 import $ from "../../shared/jquery.js";
 
 export default class {
@@ -28,7 +30,6 @@ export default class {
         url: "/api",
         method: "get",
         success: function(wen) {
-          console.log("!!!");
           wen = JSON.parse(wen);
           console.log(wen);
           var div;

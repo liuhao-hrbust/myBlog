@@ -26,7 +26,7 @@ class Router {
     }
     const view = new routes[path]();
     view.mount(document.body);
-    if (path === "/") {
+    if (path === "/home") {
       view.addhover();
     }
   }

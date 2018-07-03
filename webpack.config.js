@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const history = require("connect-history-api-fallback");
 const dev = Boolean(process.env.WEBPACK_SERVE);
 const convert = require("koa-connect");
+// const utils = require("utils");
 require("babel-core/register");
 require("babel-polyfill");
 
@@ -39,6 +40,13 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
+        loader: "url-loader",
+        options: {
+          limit: 10240
+        }
       }
     ]
   },
